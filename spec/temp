@@ -1,0 +1,1302 @@
+<html>
+<head>
+<title>Снять однокомнатную квартиру на длительный срок в Москве — 2 объявления квартир</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=7"/>
+<meta name="Description" content="Найдено 2 объявления по аренде однокомнатных квартир: аренда 1-комн. квартира - Москва Ракетный бульвар д.7 метро ВДНХ, снять 1-комн. квартира - Москва улица Космонавтов д.12 метро ВДНХ, ">
+<meta name="Keywords" content="cian.ru,Снять,однокомнатную,квартиру,длительный,срок,Москве,объявления,квартир">
+<meta name="Creation_Date" content="09/01/2012">
+<meta name="robots" content="index,follow">
+<script type="text/javascript" src="http://js.static.yandex.net/jquery/1.3.2/_jquery.js"> </script>
+<script type="text/javascript" src="/js/jquery.simpletip-1.3.1.pack.js"> </script>
+<script type="text/javascript" src="/js/jquery.simplemodal-1.4.2.js"> </script>
+<script type="text/javascript" src="/js/modallinks_init.js"> </script>
+<link rel="stylesheet" href="/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="/main.css" type="text/css" media="screen" />
+<script type="text/javascript">
+function add_smart_cart_val(source,cart_id,id_object,mode)
+{
+	$.post("/js/smart_cart_val.php", {cart_id:cart_id,id_object:id_object,mode:mode}, function(result){
+  	result = eval(result);
+
+  	if(result[0]>0)
+  	{
+		source_r= $(source).parent();
+		$(source).remove();
+
+		if(result[1]=='added'){mode='remove'; caption='удалить'; color='red';}
+		if(result[1]=='removed'){mode='add'; caption='добавить'; color='green';}
+
+		if(result[1]=='added'){src='/images/added.gif'; caption='удалить';}
+		if(result[1]=='removed'){src='/images/fav_s.png'; caption='добавить';}
+
+
+		//html = '<span onclick="add_smart_cart_val(this,' + cart_id + ',' + id_object + ',\'' + mode + '\');" style="color:' + color + ';text-decoration:underline;cursor:pointer;">' + caption + '</span>';
+		html = '<input type="image" onclick="add_smart_cart_val(this,' + cart_id + ',' + id_object + ',\'' + mode + '\');" src="' + src + '" alt="' + caption + '" title="' + caption + '" style="color:' + color + ';text-decoration:underline;cursor:pointer;"></span>';
+		$(source_r).append(html);
+	}
+	else
+	{
+		alert(result[1]);
+	}
+
+	});
+}
+</script><script type="text/javascript" src="/js/jquery.blockUI.js"></script>
+
+    <style type="text/css">
+.dialog {
+    cursor: default;
+    border: 1px solid #000000;
+}
+
+.dialog form {
+    margin: 0px;
+}
+
+/* Контейнер с заголовком */
+.dialog .dialog_title_bar {
+    height: 17px;
+    padding: 1px;
+    background: #0000CE;
+}
+
+/* Стиль текста заголовка */
+.dialog .dialog_title_bar .dialog_caption {
+    color: white;
+    font-family: sans-serif;
+    font-size: 9pt;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 1px;
+}
+
+/* Панель диалога */
+.dialog .dialog_pane {
+    background: buttonface;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Кнопки диалога */
+.dialog .dialog_button {
+    width: 80px;
+    height: 25px;
+}
+
+/* Красный крест, закрывающий окно */
+.dialog .rotes_kreuz {
+    background-image: url("/images/rotes_kreuz.png");
+    width: 28px;
+    height: 15px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    float: right;
+    display: block;
+    cursor: pointer;
+}
+
+</style>
+
+<script type="text/javascript">
+
+if($.blockUI)
+{
+$.blockUI.defaults.css.border = '0px'; //убираем серую границу
+$.blockUI.defaults.fadeIn = 100;  //ускоряем появление
+$.blockUI.defaults.fadeOut = 100; //и исчезновение
+$.blockUI.defaults.css.left = '1%'; //окно будет в центре
+$.blockUI.defaults.css.top = '1%'; //окно будет в центре
+}
+
+function stop_invasion() {
+	$('#invader').stop().stop().stop().stop().stop();
+	$('#invader').css('left', 0);
+	$('#invader').css('top', 0);
+	$('#invader').hide();
+	$('#show_me_the_secret').show();
+	$('#hide_the_secret').hide();
+}
+
+    $(document).ready( function() {
+
+	$('#hide_the_secret').click( function () {
+	    stop_invasion();
+	});
+
+	$('#show_me_the_secret').click(function() {
+
+		$('#hide_the_secret').show();
+		$('#show_me_the_secret').hide();
+
+		$('#invader').show()
+		.animate({left:"1000px", top:"500px"}, 7000)
+        .animate({left:"1000px", top:"100px"}, 3000)
+        .animate({left:"10px",   top:"500px"}, 7000)
+        .animate({left:"500px",  top:"500px"}, 3500)
+        .animate({left:"500px",  top:"-70px"}, 7000)
+		.queue( function() {
+			stop_invasion();
+			$('#indvader').dequeue();
+		});
+	});
+
+    });
+</script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+    //По этим кнопкам модальное окно закрывается
+    $('.rotes_kreuz, .close_dialog').click(function() {
+        $.unblockUI();
+        return false;
+    });
+
+
+    //Эта кнопка будет вызывать наше окно
+    $('#show_modal').click(function() {
+        var dialog_width = $('#modal_dialog').css("width");
+        $.blockUI({message: $('#modal_dialog'), css: {width: dialog_width}});
+    });
+
+
+    //По кнопке "Да" будет отправляться форма
+    $('#modal_dialog #yes').click(function() {
+        $('#modal_dialog form').submit();
+    });
+});
+
+function showmodal(modal_div) {
+	    if(!modal_div) modal_div = "#modal_dialog";
+        var dialog_width = $(modal_div).css("width");
+        $.blockUI({message: $(modal_div), css: {width: dialog_width}});
+}
+
+</script>
+
+    <script src="http://api-maps.yandex.ru/1.1/?key=AO8lMksBAAAAiBnlFAIAm_va7hpvGPyp-AaNpuTIAPXRBboAAAAAAAAAAADbIfju5y4ijnflm3KVjeW6szBx6A==" type="text/javascript"> </script>
+    <script type="text/javascript">
+        var map;
+        var div_id;
+        var lat;
+        var lng;
+        var txt;
+	    var s_id;
+
+        function TextualZoomControl (s_id) {
+            this.element = document.createElement("DIV");
+            this.element.style.position = 'absolute';
+            this.element.style.zIndex = '1000';
+            this.element.id=s_id;
+        }
+
+        TextualZoomControl.prototype = {
+            onAddToMap: function (map, position) {
+                this.map = map;
+                this.position = position || new YMaps.ControlPosition(YMaps.ControlPosition.TOP_RIGHT, new YMaps.Size(10, 10));
+                this._init();
+            },
+
+            onRemoveFromMap: function () {
+                if (this.element.parentNode) {
+                    this.map.getContainer().removeChild(this.element);
+                }
+                this.map = null;
+            },
+
+           _init: function (map) {
+                var zoomInDiv = document.createElement("div"),
+                    zoomOutDiv = document.createElement("div"),
+                    GoogleDiv = document.createElement("div"),
+                    _this = this;
+
+                this._setButtonStyle(zoomInDiv);
+                this.element.appendChild(zoomInDiv);
+                zoomInDiv.appendChild(document.createTextNode("Скрыть"));
+
+                zoomInDiv.onclick  = function () {
+                    this.parentNode.parentNode.style.display='none';
+                    _this.map.destructor();
+				var onmap =_this.element.id.split('_');
+			     document.getElementById('o_'+ onmap[1]).style.display='';
+                };
+
+
+                this._setButtonStyle(zoomOutDiv);
+                this.element.appendChild(zoomOutDiv);
+                zoomOutDiv.appendChild(document.createTextNode("Увеличить"));
+
+
+                zoomOutDiv.onclick  = function () {
+                    this.parentNode.parentNode.style.display='none';
+                    _this.map.destructor();
+				var onmap =_this.element.id.split('_');
+                window.open('http://www.cian.ru/onmap.php?obj='+onmap[0] + '&id_obj=' + onmap[1]);
+                };
+
+
+                this._setButtonStyle(GoogleDiv);
+                this.element.appendChild(GoogleDiv);
+                GoogleDiv.appendChild(document.createTextNode("на Google"));
+
+                GoogleDiv.onclick  = function () {
+                this.parentNode.parentNode.style.display='none';
+                _this.map.destructor();
+				var onmap =_this.element.id.split('_');
+                window.open('http://www.cian.ru/onmap.php?g=1&obj='+onmap[0] + '&id_obj=' + onmap[1]);
+                };
+
+
+                this.position.apply(this.element);
+                this.map.getContainer().appendChild(this.element);
+            },
+
+            _setButtonStyle: function (button) {
+                style = {textDecoration: 'underline',
+                         color: 'black',
+                         textDecoration: 'none',
+                         backgroundColor: '#C0C0C0',
+                         font: 'small Arial',
+                         border: '2px solid black',
+                         padding: '2px',
+                         marginBottom: '3px',
+                         textAlign: 'center',
+                         width: '6em',
+                         cursor: 'pointer'};
+                for (var k in style) {
+                    button.style[k] = style[k];
+                }
+            }
+        }
+
+  var route_set;
+  var incr;
+function init(div_id,lat,lng,txt,obj,route_set,incr) {
+            if(!incr) incr=16;
+            YMaps.load(function () { init_map(div_id,lat,lng,txt,obj,route_set,incr) });
+        }
+
+        function init_map(div_id,lat,lng,txt,obj,route_set,incr) {
+      	document.getElementById('o_'+ div_id).style.display='none';
+        map = new YMaps.Map(document.getElementById('m_'+ div_id));
+        document.getElementById('m_'+ div_id).style.display='block';
+            map.setCenter(new YMaps.GeoPoint(lat, lng), incr);
+            var point = new YMaps.GeoPoint(lat, lng);
+            var placemark = new YMaps.Placemark(point);
+            txt = txt.split(' ');
+            var distance_txt = '';
+            var metro_txt = '';
+            var mcad_txt = '';
+            var point2 = new YMaps.GeoPoint(txt[0],txt[1]);
+
+            if( (route_set==1 || route_set==3) && txt[0]>0 && txt[1]>0 )
+            	{
+					var metro_txt = "До&nbsp;<span class=\"link\" onclick=\"map.panTo(new YMaps.GeoPoint("+txt[0]+","+txt[1]+"));\">метро</span><br>";
+          		  	var distance = point.distance(point2);
+					if(distance) distance_txt = "пешком&nbsp;по&nbsp;прямой&nbsp;" + "&nbsp;&asymp;&nbsp;" + (distance/(6000/60)).toFixed(0) + "мин&nbsp;(" + YMaps.humanDistance(distance)+ ")<BR>";
+                }
+
+//            if( (route_set==1 || route_set==2) && txt[0]>0 && txt[1]>0 )
+//            	{
+            		        var router = new YMaps.Router([point2, new YMaps.GeoPoint(lat,lng)],[1],{ viewAutoApply: false });
+       						YMaps.Events.observe(router, router.Events.Success, function() {
+
+							if(route_set==2)var fullDistance = (router.getDistance()/1000).toFixed(0);
+							else var fullDistance = (router.getDistance()/1000).toFixed(1);
+							var fullTime = (router.getDuration()/60).toFixed(0);
+
+            				if(route_set==2) {metro_txt=''; distance_txt = "От&nbsp;<a href=\"javascript: map.panTo(new YMaps.GeoPoint("+txt[0]+","+txt[1]+"));\">МКАД</a> &asymp; " + fullDistance + 'км';}
+            				else distance_txt = distance_txt + 'на автомобиле без пробок &asymp; ' + fullTime + 'мин (' + fullDistance + 'км)';
+
+      						if(distance_txt) placemark.setBalloonContent(metro_txt + distance_txt);
+	            			map.addOverlay(placemark);
+    		    			if(distance_txt) placemark.openBalloon();
+
+								});
+//            	}
+
+	            			map.addOverlay(placemark);
+
+
+//                if(distance_txt) placemark.setBalloonContent(metro_txt + distance_txt);
+//	            map.addOverlay(placemark);
+//    		    if(distance_txt) placemark.openBalloon();
+
+            
+
+            map.addControl(new YMaps.ToolBar());
+            //map.addControl(new YMaps.TypeControl());
+            map.addControl(new YMaps.Zoom());
+            map.addControl(new YMaps.ScaleLine());
+            if(div_id && obj) map.addControl(new TextualZoomControl(obj + '_'+ div_id));
+
+            
+        }
+    </script>
+
+<script language="javascript">
+var Left = 400;
+var Top = 250;
+
+function scroll_control(block_id)
+{
+if(!block_id)block_id="login_new";
+if(document.getElementById("doc").scrollTop > 0){document.getElementById(block_id).style.top = document.getElementById("doc").scrollTop + Top;}
+else {document.getElementById(block_id).style.top = Top;}
+}
+</script>
+
+
+<script type="text/javascript" src="/js/ajax.js"> </script>
+<script type="text/javascript" src="/js/complaint.js"> </script>
+<script type="text/javascript" src="/js/cart.js"> </script>
+<script type="text/javascript">
+var causes = [
+{id: 4, text:'улица не соответствует ст.Метро', table:[ {t:'flat'},{t:'office'},{t:'flat2'} ], column:'metro'},
+{id: 5, text:'ст.Метро не соответствует комментарию', table:[ {t:'flat'},{t:'office'},{t:'flat2'} ], column:'metro'},
+{id: 6, text:'улица не соответствует комментарию', table:[ {t:'flat'},{t:'office'},{t:'flat2'} ], column:'metro'},
+{id: 7, text:'не отмечена, принадлежность к Подмосковью', table:[ {t:'flat'},{t:'flat2'},{t:'office'},{t:'suburbian'} ], column:'metro'},
+{id: 8, text:'время пути от метро до объекта указано неверно', table:[ {t:'flat'},{t:'office'},{t:'flat2'} ], column:'metro'},
+{id: 9, text:'это не квартира, а комната', table:[ {t:'flat'},{t:'flat2'} ], column:'room'},
+{id: 10, text:'в комментарии указан другой тип объекта', table:[ {t:'flat'},{t:'flat2'},{t:'office'},{t:'suburbian'} ], column:'room'},
+{id: 11, text:'в комментарии другие комиссионные', table:[ {t:'flat'},{t:'office'},{t:'suburbian'} ], column:'com'},
+{id: 12, text:'в комментарии написано: мебели нет', table:[ {t:'flat'} ], column:'dopsved'},
+{id: 13, text:'в комментарии написано: б/тел', table:[ {t:'flat'} ], column:'dopsved'},
+{id: 14, text:'в комментарии написано: ТВ нет', table:[ {t:'flat'} ], column:'dopsved'},
+{id: 15, text:'в комментарии написано: стир.машины нет', table:[ {t:'flat'} ], column:'dopsved'},
+{id: 16, text:'в комментарии написано: холодильника нет', table:[ {t:'flat'} ], column:'dopsved'},
+{id: 17, text:'в комментарии написано: балкона нет', table:[ {t:'flat'},{t:'flat2'} ], column:'dopsved'},
+{id: 18, text:'телефон подан ошибочно', table:[ {t:'flat'},{t:'flat2'},{t:'office'},{t:'suburbian'} ], column:'contacts'},
+{id: 20, text:'в комментарии некорректные, оскорбительные выражения', table:[ {t:'flat'},{t:'flat2'},{t:'office'},{t:'suburbian'} ], column:'comment'},
+{id: 21, text:'в комментарии посторонняя реклама', table:[ {t:'flat'},{t:'flat2'},{t:'office'},{t:'suburbian'} ], column:'comment'},
+{id: 22, text:'в объявлении рекламируется более одного объекта', table:[ {t:'flat'},{t:'flat2'},{t:'office'},{t:'suburbian'} ], column:'comment'},
+{id: 23, text:'в комментарии много орфографических ошибок', table:[ {t:'flat'},{t:'flat2'},{t:'office'},{t:'suburbian'} ], column:'comment'},
+{id: 24, text:'цена за сутки, а не за месяц (аренда)', table:[ {t:'flat'},{t:'suburbian'} ], column:'price'},
+{id: 25, text:'населенный пункт указан неверно', table:[ {t:'flat'},{t:'office'},{t:'flat2'},{t:'suburbian'} ], column:'metro'},
+{id: 41, text:'количество комнат указано неверно', table:[ {t:'flat2'} ], column:'room'},
+{id: 43, text:'расстояние от МКАД указано неверно', table:[ {t:'suburbian'} ], column:'metro'},
+{id: 44, text:'площадь дома указана неверно', table:[ {t:'suburbian'} ], column:'area'},
+{id: 45, text:'на ФОТО изображен другой объект', table:[ {t:'flat'},{t:'office'},{t:'suburbian'},{t:'flat2'} ], column:'comment'},
+{id: 46, text:'на ФОТО чужие водяные знаки', table:[ {t:'flat'},{t:'office'},{t:'suburbian'},{t:'flat2'} ], column:'comment'},
+{id: 47, text:'это продажа, а не ППА', table:[ {t:'office'} ], column:'dopsved'},
+{id: 48, text:'метраж указан неверно', table:[ {t:'office'} ], column:'rooms'},
+{id: 49, text:'здание жилое, а не административное', table:[ {t:'office'} ], column:'floor'},
+{id: 50, text:'здание административное, а не жилое', table:[ {t:'office'} ], column:'floor'},
+{id: 51, text:'это ППА, а не продажа', table:[ {t:'office'} ], column:'dopsved'},
+{id: 52, text:'цена за кв.метр, а не за весь объект', table:[ {t:'flat2'} ], column:'price'},
+{id: 53, text:'цена за сотку, а не за весь участок', table:[ {t:'suburbian'} ], column:'price'},
+{id: 54, text:'неверно указан тип объекта', table:[ {t:'suburbian'} ], column:'object'},
+{id: 55, text:'предоплата указана неверно', table:[ {t:'flat'} ], column:'price'},
+{id: 56, text:'в комментарии другие комиссионные', table:[ {t:'office'} ], column:'dopsved'},
+{id: 57, text:'в комментарии написано: без животных', table:[ {t:'flat'} ], column:'dopsved'},
+{id: 58, text:'в комментарии написано: без детей', table:[ {t:'flat'} ], column:'dopsved'},
+{id: 59, text:'указанное время пути меньше чем показывает ссылка \'на карте\'', table:[ {t:'flat'},{t:'flat2'} ], column:'metro'},
+{id: 61, text:'срок аренды указан неверно', table:[ {t:'flat'} ], column:'price'},
+{id: 69, text:'объявление не соответствует разделу сайта', table:[ {t:'flat'},{t:'flat2'},{t:'office'},{t:'suburbian'} ], column:'comment'},
+{id: 70, text:'объявление не соответствует тематике сайта', table:[ {t:'flat'},{t:'flat2'},{t:'office'},{t:'suburbian'} ], column:'comment'},
+{id: 71, text:'площадь участка указана неверно', table:[ {t:'suburbian'} ], column:'area'},
+{id: 72, text:'не отмечено наличие залога', table:[ {t:'flat'} ], column:'price'},
+{id: 73, text:'это ППА, а не аренда', table:[ {t:'office'} ], column:'dopsved'},
+{id: 74, text:'регион указан неверно', table:[ {t:'flat'},{t:'flat2'},{t:'office'},{t:'suburbian'} ], column:'metro'},
+{id: 75, text:'шоссе указано неверно', table:[ {t:'flat'},{t:'flat2'},{t:'office'},{t:'suburbian'} ], column:'metro'},
+{id: 76, text:'не указана улица', table:[ {t:'flat'} ], column:'metro'},
+{id: 77, text:'это альтернативная, а не свободная продажа', table:[ {t:'flat2'} ], column:'dopsved'},
+{id: 79, text:'это субаренда, а не прямая аренда', table:[ {t:'office'} ], column:'dopsved'},
+{id: 80, text:'неправильно указан параметр Ипотека', table:[ {t:'flat2'} ], column:'dopsved'},
+{id: 82, text:'населенный пункт находится в другом районе', table:[ {t:'flat'},{t:'office'},{t:'flat2'},{t:'suburbian'} ], column:'metro'},
+{id: 83, text:'нежилое помещение в разделе квартир', table:[ {t:'flat'},{t:'flat2'} ], column:'room'},
+{id: 84, text:'к объявлению прикреплены чужие фотографии', table:[ {t:'flat'},{t:'office'},{t:'suburbian'},{t:'flat2'} ], column:'comment'},
+{id: 85, text:'это не квартира или комната, а доля в квартире', table:[ {t:'flat2'} ], column:'room'},
+{id: 89, text:'это новостройка, а не вторичка', table:[ {t:'flat2'} ], column:'dopsved'}
+];
+
+</script>
+<script type="text/javascript">
+function isValidEmail (email, strict)
+{
+ if ( !strict ) email = email.replace(/^\s+|\s+$/g, '');
+ return (/^([a-z0-9_\-]+\.)*[a-z0-9_\-]+@([a-z0-9][a-z0-9\-]*[a-z0-9]\.)+[a-z]{2,4}$/i).test(email);
+}
+</script><script type="text/javascript" src="/js/setbounds.js"></script><script type="text/javascript" src="/js/setbounds.js"></script><script type="text/javascript" src="/js/street.js"> </script>
+<script type="text/javascript">
+
+function show_jqsearch(){
+if(document.getElementById('jq_search'))
+	{
+		$(loading_jqsearch).remove();
+		document.getElementById('jq_search').style.display='';
+    }
+}
+
+$(document).ready(function(){
+	$(".btn-slide").click(function(){		$("#panel1").slideToggle("slow");
+	    $('#pagenav_top').toggle();
+		$('#to_rab_show').toggle();
+		$('#subscribe_show').toggle();
+	    $('#adw_top').toggle();
+		if(this.value=='Изменить условия поиска'){this.value='Отмена'; document.getElementById('btn_new_search').style.display='none'; document.getElementById('old_select').style.display='none'; document.getElementById('btn_submit_search').style.display='';if(document.getElementById('searchstr_txt'))document.getElementById('searchstr_txt').style.display='none';}
+		else {this.value='Изменить условия поиска'; document.getElementById('btn_new_search').style.display=''; document.getElementById('old_select').style.display=''; document.getElementById('btn_submit_search').style.display='none';if(document.getElementById('searchstr_txt'))document.getElementById('searchstr_txt').style.display='';}
+		$(this).toggleClass("active"); return false;
+	});
+	$(".btn-slide2").click(function(){		$("#panel2").slideToggle("slow");
+	    $('#pagenav_top').toggle();
+		$('#to_rab_show').toggle();
+		$('#subscribe_show').toggle();
+	    $('#adw_top').toggle();
+		if(this.value=='Новый поиск'){this.value='Отмена'; document.getElementById('subscribe_show').style.display='none'; document.getElementById('btn_change_search').style.display='none'; document.getElementById('old_select').style.display='none'; document.getElementById('btn_submit_search').style.display='none';if(document.getElementById('searchstr_txt'))document.getElementById('searchstr_txt').style.display='none';}
+		else {this.value='Новый поиск'; document.getElementById('subscribe_show').style.display=''; document.getElementById('btn_change_search').style.display=''; document.getElementById('old_select').style.display=''; document.getElementById('btn_submit_search').style.display='none';if(document.getElementById('searchstr_txt'))document.getElementById('searchstr_txt').style.display='';}
+		$(this).toggleClass("active"); return false;
+	});
+
+});
+</script>
+
+<style type="text/css">
+
+a:focus {
+	outline: none;
+}
+.panel {
+	height: 100%;
+	display: none;
+}
+
+.panel2 {
+	height: 230px;
+	display: none;
+}
+
+.panel ul {
+    margin: 0;
+    padding: 0 5px;
+    float:left;
+    list-style:none;
+}
+
+
+.panel ul li{
+    margin: 6px;
+    padding: 0;
+}
+
+.panel ul li a{
+    font-weight:bold;
+    color: #333;
+
+}
+.slide {
+	margin: 0;
+	padding: 0;
+	border-top: solid 0px #aaa;
+}
+
+.btn-slide {
+	text-align: center;
+}
+
+.btn-slide2 {
+	text-align: center;
+}
+
+.active {
+	background-position: right 12px;
+}
+</style><script src="js/premium.js" type="text/javascript"> </script>
+<script src="js/jqCenterPlugin.js" type="text/javascript"> </script>
+
+<script type="text/javascript"> var metro_stations = [{id:1,k:'85',v:'Авиамоторная',n:'metro_select',pos:'37.717052 55.751558'},{id:2,k:'13',v:'Автозаводская',n:'metro_select',pos:'37.657440 55.707167'},{id:3,k:'97',v:'Академическая',n:'metro_select',pos:'37.573555 55.687868'},{id:4,k:'53',v:'Александровский сад',n:'metro_select',pos:'37.610009 55.752298'},{id:5,k:'105',v:'Алексеевская',n:'metro_select',pos:'37.638979 55.808295'},{id:6,k:'135',v:'Алтуфьево',n:'metro_select',pos:'37.587128 55.897912'},{id:7,k:'156',v:'Аннино',n:'metro_select',pos:'37.596830 55.583250'},{id:8,k:'50',v:'Арбатская',n:'metro_select',pos:'37.601753 55.752404'},{id:9,k:'5',v:'Аэропорт',n:'metro_select',pos:'37.533706 55.800812'},{id:10,k:'109',v:'Бабушкинская',n:'metro_select',pos:'37.664150 55.869602'},{id:11,k:'57',v:'Багратионовская',n:'metro_select',pos:'37.497710 55.743735'},{id:12,k:'71',v:'Баррикадная',n:'metro_select',pos:'37.581280 55.760803'},{id:13,k:'47',v:'Бауманская',n:'metro_select',pos:'37.679520 55.772472'},{id:14,
+k:'69',v:'Беговая',n:'metro_select',pos:'37.546821 55.773682'},{id:15,k:'7',v:'Белорусская',n:'metro_select',pos:'37.582242 55.775717'},{id:16,k:'93',v:'Беляево',n:'metro_select',pos:'37.526304 55.642464'},{id:17,k:'131',v:'Бибирево',n:'metro_select',pos:'37.602687 55.884272'},{id:18,k:'30',v:'Библиотека Ленина',n:'metro_select',pos:'37.610997 55.752698'},{id:19,k:'207',v:'Борисово',n:'metro_select',pos:'37.742598 55.635400'},{id:20,k:'120',v:'Боровицкая',n:'metro_select',pos:'37.610152 55.751705'},{id:21,k:'107',v:'Ботанический сад',n:'metro_select',pos:'37.638225 55.845451'},{id:22,k:'145',v:'Братиславская',n:'metro_select',pos:'37.750801 55.659500'},{id:23,k:'195',v:'Бунинская аллея',n:'metro_select',pos:'37.516781 55.537974'},{id:24,k:'106',v:'ВДНХ',n:'metro_select',pos:'37.641315 55.821032'},{id:25,k:'16',v:'Варшавская',n:'metro_select',pos:'37.619558 55.653492'},{id:26,k:'24',v:'Вернадского проспект',n:'metro_select',pos:'37.506091 55.676945'},{id:27,k:'112',v:'Владыкино',n:'metro_select',pos:'37.
+589877 55.847280'},{id:28,k:'2',v:'Водный стадион',n:'metro_select',pos:'37.487128 55.839840'},{id:29,k:'3',v:'Войковская',n:'metro_select',pos:'37.497791 55.818923'},{id:30,k:'77',v:'Волгоградский проспект',n:'metro_select',pos:'37.686527 55.725275'},{id:31,k:'142',v:'Волжская',n:'metro_select',pos:'37.752823 55.690755'},{id:32,k:'203',v:'Волоколамская',n:'metro_select',pos:'37.381810 55.835594'},{id:33,k:'157',v:'Воробьевы горы',n:'metro_select',pos:'37.559137 55.710246'},{id:34,k:'198',v:'Выставочная',n:'metro_select',pos:'37.542770 55.750195'},{id:35,k:'81',v:'Выхино',n:'metro_select',pos:'37.817807 55.715961'},{id:36,k:'6',v:'Динамо',n:'metro_select',pos:'37.558230 55.789821'},{id:37,k:'115',v:'Дмитровская',n:'metro_select',pos:'37.581200 55.807547'},{id:38,k:'132',v:'Добрынинская',n:'metro_select',pos:'37.622594 55.729057'},{id:39,k:'21',v:'Домодедовская',n:'metro_select',pos:'37.719594 55.610956'},{id:40,k:'164',v:'Донского Дмитрия бульвар',n:'metro_select',pos:'37.576367 55.569382'},{id:41,k:'205',v:'
+Достоевская',n:'metro_select',pos:'37.613737 55.781742'},{id:42,k:'140',v:'Дубровка',n:'metro_select',pos:'37.677212 55.717274'},{id:43,k:'209',v:'Зябликово',n:'metro_select',pos:'37.744529 55.612307'},{id:44,k:'43',v:'Измайловская',n:'metro_select',pos:'37.781380 55.787680'},{id:45,k:'94',v:'Калужская',n:'metro_select',pos:'37.540488 55.657134'},{id:46,k:'18',v:'Кантемировская',n:'metro_select',pos:'37.656613 55.635782'},{id:47,k:'17',v:'Каховская',n:'metro_select',pos:'37.598286 55.652994'},{id:48,k:'15',v:'Каширская',n:'metro_select',pos:'37.648690 55.655239'},{id:49,k:'52',v:'Киевская',n:'metro_select',pos:'37.567312 55.744678'},{id:50,k:'74',v:'Китай-город',n:'metro_select',pos:'37.633823 55.755398'},{id:51,k:'144',v:'Кожуховская',n:'metro_select',pos:'37.685593 55.706203'},{id:52,k:'14',v:'Коломенская',n:'metro_select',pos:'37.663889 55.678387'},{id:53,k:'35',v:'Комсомольская',n:'metro_select',pos:'37.656029 55.774659'},{id:54,k:'92',v:'Коньково',n:'metro_select',pos:'37.519360 55.633109'},{id:55,k:'22'
+,v:'Красногвардейская',n:'metro_select',pos:'37.744522 55.614048'},{id:56,k:'133',v:'Краснопресненская',n:'metro_select',pos:'37.577543 55.760596'},{id:57,k:'36',v:'Красносельская',n:'metro_select',pos:'37.666279 55.780117'},{id:58,k:'34',v:'Красные ворота',n:'metro_select',pos:'37.649094 55.768876'},{id:59,k:'139',v:'Крестьянская застава',n:'metro_select',pos:'37.665722 55.732448'},{id:60,k:'29',v:'Кропоткинская',n:'metro_select',pos:'37.602777 55.745144'},{id:61,k:'62',v:'Крылатское',n:'metro_select',pos:'37.408130 55.756862'},{id:62,k:'73',v:'Кузнецкий мост',n:'metro_select',pos:'37.624903 55.761259'},{id:63,k:'79',v:'Кузьминки',n:'metro_select',pos:'37.765417 55.705452'},{id:64,k:'60',v:'Кунцевская',n:'metro_select',pos:'37.446003 55.730791'},{id:65,k:'48',v:'Курская',n:'metro_select',pos:'37.659928 55.758179'},{id:66,k:'55',v:'Кутузовская',n:'metro_select',pos:'37.534173 55.739965'},{id:67,k:'98',v:'Ленинский проспект',n:'metro_select',pos:'37.586158 55.707491'},{id:68,k:'32',v:'Лубянка',n:'metro_select'
+,pos:'37.625873 55.760150'},{id:69,k:'143',v:'Люблино',n:'metro_select',pos:'37.761473 55.675753'},{id:70,k:'87',v:'Марксистская',n:'metro_select',pos:'37.656577 55.741140'},{id:71,k:'204',v:'Марьина роща',n:'metro_select',pos:'37.61662 55.795449'},{id:72,k:'146',v:'Марьино',n:'metro_select',pos:'37.743902 55.650150'},{id:73,k:'8',v:'Маяковская',n:'metro_select',pos:'37.597001 55.769433'},{id:74,k:'110',v:'Медведково',n:'metro_select',pos:'37.661563 55.887215'},{id:75,k:'197',v:'Международная',n:'metro_select',pos:'37.533454 55.748300'},{id:76,k:'117',v:'Менделеевская',n:'metro_select',pos:'37.599759 55.781529'},{id:77,k:'196',v:'Митино',n:'metro_select',pos:'37.354923 55.846113'},{id:78,k:'61',v:'Молодежная',n:'metro_select',pos:'37.417050 55.740912'},{id:79,k:'202',v:'Мякинино',n:'metro_select',pos:'37.384738 55.82399'},{id:80,k:'124',v:'Нагатинская',n:'metro_select',pos:'37.622127 55.683163'},{id:81,k:'125',v:'Нагорная',n:'metro_select',pos:'37.611122 55.673225'},{id:82,k:'126',v:'Нахимовский проспект',n:'
+metro_select',pos:'37.605292 55.662654'},{id:83,k:'82',v:'Новогиреево',n:'metro_select',pos:'37.816675 55.751867'},{id:84,k:'11',v:'Новокузнецкая',n:'metro_select',pos:'37.629592 55.742134'},{id:85,k:'134',v:'Новослободская',n:'metro_select',pos:'37.601501 55.779707'},{id:86,k:'89',v:'Новоясеневская',n:'metro_select',pos:'37.554151 55.601442'},{id:87,k:'95',v:'Новые черемушки',n:'metro_select',pos:'37.554493 55.670316'},{id:88,k:'100',v:'Октябрьская',n:'metro_select',pos:'37.611221 55.729255'},{id:89,k:'67',v:'Октябрьское поле',n:'metro_select',pos:'37.493605 55.793505'},{id:90,k:'20',v:'Орехово',n:'metro_select',pos:'37.695681 55.613499'},{id:91,k:'111',v:'Отрадное',n:'metro_select',pos:'37.604843 55.863384'},{id:92,k:'31',v:'Охотный Ряд',n:'metro_select',pos:'37.617312 55.757247'},{id:93,k:'12',v:'Павелецкая',n:'metro_select',pos:'37.637335 55.731607'},{id:94,k:'28',v:'Парк Культуры',n:'metro_select',pos:'37.593659 55.735373'},{id:95,k:'165',v:'Парк Победы',n:'metro_select',pos:'37.514679 55.736437'},{id:
+96,k:'44',v:'Партизанская',n:'metro_select',pos:'37.748681 55.787573'},{id:97,k:'42',v:'Первомайская',n:'metro_select',pos:'37.799355 55.794553'},{id:98,k:'83',v:'Перово',n:'metro_select',pos:'37.786339 55.751173'},{id:99,k:'113',v:'Петровско-Разумовская',n:'metro_select',pos:'37.574840 55.836039'},{id:100,k:'141',v:'Печатники',n:'metro_select',pos:'37.728101 55.692704'},{id:101,k:'59',v:'Пионерская',n:'metro_select',pos:'37.467114 55.736027'},{id:102,k:'63',v:'Планерная',n:'metro_select',pos:'37.436679 55.860499'},{id:103,k:'86',v:'Площадь Ильича',n:'metro_select',pos:'37.680868 55.746968'},{id:104,k:'49',v:'Площадь революции',n:'metro_select',pos:'37.622666 55.756918'},{id:105,k:'68',v:'Полежаевская',n:'metro_select',pos:'37.519279 55.777535'},{id:106,k:'121',v:'Полянка',n:'metro_select',pos:'37.619216 55.736802'},{id:107,k:'130',v:'Пражская',n:'metro_select',pos:'37.603981 55.612238'},{id:108,k:'38',v:'Преображенская площадь',n:'metro_select',pos:'37.715237 55.796157'},{id:109,k:'76',v:'Пролетарская',n:'
+metro_select',pos:'37.667788 55.732017'},{id:110,k:'136',v:'Проспект Мира',n:'metro_select',pos:'37.633688 55.779849'},{id:111,k:'96',v:'Профсоюзная',n:'metro_select',pos:'37.562865 55.677930'},{id:112,k:'72',v:'Пушкинская',n:'metro_select',pos:'37.606748 55.765068'},{id:113,k:'1',v:'Речной вокзал',n:'metro_select',pos:'37.476231 55.854891'},{id:114,k:'104',v:'Рижская',n:'metro_select',pos:'37.636563 55.792412'},{id:115,k:'138',v:'Римская',n:'metro_select',pos:'37.680032 55.746360'},{id:116,k:'80',v:'Рязанский проспект',n:'metro_select',pos:'37.793130 55.716869'},{id:117,k:'116',v:'Савеловская',n:'metro_select',pos:'37.588359 55.793520'},{id:118,k:'108',v:'Свиблово',n:'metro_select',pos:'37.652705 55.855416'},{id:119,k:'127',v:'Севастопольская',n:'metro_select',pos:'37.598474 55.651430'},{id:120,k:'45',v:'Семеновская',n:'metro_select',pos:'37.719693 55.783271'},{id:121,k:'122',v:'Серпуховская',n:'metro_select',pos:'37.624211 55.726928'},{id:122,k:'192',v:'Скобелевская улица',n:'metro_select',pos:'37.554699 
+55.548243'},{id:123,k:'201',v:'Славянский бульвар',n:'metro_select',pos:'37.471102 55.729518'},{id:124,k:'51',v:'Смоленская',n:'metro_select',pos:'37.582403 55.749395'},{id:125,k:'4',v:'Сокол',n:'metro_select',pos:'37.514976 55.804992'},{id:126,k:'37',v:'Сокольники',n:'metro_select',pos:'37.679709 55.789259'},{id:127,k:'26',v:'Спортивная',n:'metro_select',pos:'37.563961 55.723110'},{id:128,k:'206',v:'Сретенский бульвар',n:'metro_select',pos:'37.635817 55.765949'},{id:129,k:'200',v:'Строгино',n:'metro_select',pos:'37.402534 55.803783'},{id:130,k:'54',v:'Студенческая',n:'metro_select',pos:'37.548483 55.738688'},{id:131,k:'102',v:'Сухаревская',n:'metro_select',pos:'37.632790 55.772958'},{id:132,k:'64',v:'Сходненская',n:'metro_select',pos:'37.439805 55.850429'},{id:133,k:'75',v:'Таганская',n:'metro_select',pos:'37.653433 55.742372'},{id:134,k:'9',v:'Тверская',n:'metro_select',pos:'37.605221 55.766263'},{id:135,k:'10',v:'Театральная',n:'metro_select',pos:'37.618830 55.757409'},{id:136,k:'78',v:'Текстильщики',n:'
+metro_select',pos:'37.731335 55.709221'},{id:137,k:'91',v:'Теплый стан',n:'metro_select',pos:'37.507511 55.618827'},{id:138,k:'114',v:'Тимирязевская',n:'metro_select',pos:'37.576007 55.818407'},{id:139,k:'88',v:'Третьяковская',n:'metro_select',pos:'37.629188 55.741120'},{id:140,k:'199',v:'Трубная',n:'metro_select',pos:'37.622055 55.767468'},{id:141,k:'123',v:'Тульская',n:'metro_select',pos:'37.622675 55.708739'},{id:142,k:'103',v:'Тургеневская',n:'metro_select',pos:'37.637380 55.765716'},{id:143,k:'65',v:'Тушинская',n:'metro_select',pos:'37.436894 55.826316'},{id:144,k:'70',v:'Улица 1905 года',n:'metro_select',pos:'37.561571 55.765053'},{id:145,k:'194',v:'Улица Горчакова',n:'metro_select',pos:'37.531235 55.541830'},{id:146,k:'40',v:'Улица Подбельского',n:'metro_select',pos:'37.733742 55.814533'},{id:147,k:'25',v:'Университет',n:'metro_select',pos:'37.534667 55.692592'},{id:148,k:'193',v:'Ушакова адмирала бульвар',n:'metro_select',pos:'37.543048 55.545416'},{id:149,k:'58',v:'Филевский парк',n:'metro_select',
+pos:'37.483328 55.739549'},{id:150,k:'56',v:'Фили',n:'metro_select',pos:'37.514823 55.746142'},{id:151,k:'27',v:'Фрунзенская',n:'metro_select',pos:'37.580220 55.727607'},{id:152,k:'19',v:'Царицыно',n:'metro_select',pos:'37.670142 55.621658'},{id:153,k:'118',v:'Цветной бульвар',n:'metro_select',pos:'37.621255 55.772087'},{id:154,k:'39',v:'Черкизовская',n:'metro_select',pos:'37.746714 55.803272'},{id:155,k:'128',v:'Чертановская',n:'metro_select',pos:'37.605939 55.641468'},{id:156,k:'119',v:'Чеховская',n:'metro_select',pos:'37.607520 55.765807'},{id:157,k:'33',v:'Чистые пруды',n:'metro_select',pos:'37.638476 55.765281'},{id:158,k:'137',v:'Чкаловская',n:'metro_select',pos:'37.659164 55.756822'},{id:159,k:'99',v:'Шаболовская',n:'metro_select',pos:'37.608257 55.719176'},{id:160,k:'208',v:'Шипиловская',n:'metro_select',pos:'37.743027 55.621949'},{id:161,k:'84',v:'Шоссе энтузиастов',n:'metro_select',pos:'37.752149 55.758899'},{id:162,k:'41',v:'Щелковская',n:'metro_select',pos:'37.798538 55.810921'},{id:163,k:'66',v:'
+Щукинская',n:'metro_select',pos:'37.464212 55.808548'},{id:164,k:'46',v:'Электрозаводская',n:'metro_select',pos:'37.706685 55.782218'},{id:165,k:'23',v:'Юго-Западная',n:'metro_select',pos:'37.483319 55.663771'},{id:166,k:'129',v:'Южная',n:'metro_select',pos:'37.608670 55.622360'},{id:167,k:'155',v:'Янгеля Академика',n:'metro_select',pos:'37.600819 55.595521'},{id:168,k:'90',v:'Ясенево',n:'metro_select',pos:'37.533301 55.606085'},{id:169,k:'281',v:'Алтуфьевское шоссе',n:'metro_select',pos:'37.58836 55.909767'},{id:170,k:'282',v:'Боровское шоссе',n:'metro_select',pos:'37.432363 55.662458'},{id:171,k:'283',v:'Быковское шоссе',n:'metro_select',pos:'37.835059 55.707942'},{id:172,k:'284',v:'Варшавское шоссе',n:'metro_select',pos:'37.596578 55.576013'},{id:173,k:'285',v:'Волоколамское шоссе',n:'metro_select',pos:'37.395713 55.832578'},{id:174,k:'286',v:'Горьковское шоссе',n:'metro_select',pos:'37.842612 55.776902'},{id:175,k:'256',v:'Дмитровское шоссе',n:'metro_select',pos:'37.543642 55.907814'},{id:176,k:'257',v:'
+Егорьевское шоссе',n:'metro_select',pos:'37.835059 55.707942'},{id:177,k:'258',v:'Ильинское шоссе',n:'metro_select',pos:'37.372796 55.789683'},{id:178,k:'259',v:'Калужское шоссе',n:'metro_select',pos:'37.492015 55.611117'},{id:179,k:'260',v:'Каширское шоссе',n:'metro_select',pos:'37.729487 55.591776'},{id:180,k:'261',v:'Киевское шоссе',n:'metro_select',pos:'37.459743 55.638847'},{id:181,k:'262',v:'Куркинское шоссе',n:'metro_select',pos:'37.428328 55.876584'},{id:182,k:'263',v:'Ленинградское шоссе',n:'metro_select',pos:'37.445065 55.881602'},{id:183,k:'264',v:'Минское шоссе',n:'metro_select',pos:'37.385799 55.713563'},{id:184,k:'288',v:'Машкинское шоссе',n:'metro_select',pos:'37.428328 55.876584'},{id:185,k:'265',v:'Можайское шоссе',n:'metro_select',pos:'37.385799 55.713563'},{id:186,k:'266',v:'Новокаширское шоссе',n:'metro_select',pos:'37.68788 55.575903'},{id:187,k:'267',v:'Новорижское шоссе',n:'metro_select',pos:'37.372796 55.789683'},{id:188,k:'268',v:'Новорязанское шоссе',n:'metro_select',pos:'37.830553 
+55.68711'},{id:189,k:'269',v:'Новосходненское шоссе',n:'metro_select',pos:'37.445065 55.881602'},{id:190,k:'291',v:'Новоухтомское шоссе',n:'metro_select',pos:'37.838971 55.718692'},{id:191,k:'270',v:'Носовихинское шоссе',n:'metro_select',pos:'37.841904 55.744005'},{id:192,k:'271',v:'Осташковское шоссе',n:'metro_select',pos:'37.673118 55.895181'},{id:193,k:'272',v:'Подушкинское шоссе',n:'metro_select',pos:'37.369363 55.765084'},{id:194,k:'273',v:'Пятницкое шоссе',n:'metro_select',pos:'37.395713 55.832578'},{id:195,k:'274',v:'Рогачевское шоссе',n:'metro_select',pos:'37.543642 55.907814'},{id:196,k:'275',v:'Рублево-Успенское шоссе',n:'metro_select',pos:'37.369363 55.765084'},{id:197,k:'290',v:'Рублевское шоссе',n:'metro_select',pos:'37.369492 55.769947'},{id:198,k:'287',v:'Рязанское шоссе',n:'metro_select',pos:'37.835059 55.707942'},{id:199,k:'276',v:'Симферопольское шоссе',n:'metro_select',pos:'37.596578 55.576013'},{id:200,k:'277',v:'Сколковское шоссе',n:'metro_select',pos:'37.3991 55.701911'},{id:201,k:'279',
+v:'Щелковское шоссе',n:'metro_select',pos:'37.838857 55.813879'},{id:202,k:'280',v:'Ярославское шоссе',n:'metro_select',pos:'37.725861 55.882277'}];
+ var metro_stations_array=eval(metro_stations);
+</script>
+
+<script type="text/javascript"> var metro_stations_10 = [{id:1,k:'1',v:'Автово',n:'metro_select',pos:'30.261511 59.867240'},{id:2,k:'2',v:'Академическая',n:'metro_select',pos:'30.396079 60.012750'},{id:3,k:'3',v:'Балтийская',n:'metro_select',pos:'30.299689 59.907194'},{id:4,k:'4',v:'Василеостровская',n:'metro_select',pos:'30.278301 59.942588'},{id:5,k:'5',v:'Владимирская',n:'metro_select',pos:'30.348046 59.927504'},{id:6,k:'6',v:'Волковская',n:'metro_select',pos:'30.357882 59.895881'},{id:7,k:'7',v:'Выборгская',n:'metro_select',pos:'30.347381 59.971033'},{id:8,k:'8',v:'Горьковская',n:'metro_select',pos:'30.318931 59.956124'},{id:9,k:'9',v:'Гостиный Двор',n:'metro_select',pos:'30.333592 59.933974'},{id:10,k:'10',v:'Гражданский Проспект',n:'metro_select',pos:'30.418321 60.034960'},{id:11,k:'11',v:'Девяткино',n:'metro_select',pos:'30.442764 60.050327'},{id:12,k:'12',v:'Достоевская',n:'metro_select',pos:'30.346078 59.928226'},{id:13,k:'13',v:'Елизаровская',n:'metro_select',pos:'30.423765 59.896779'},{id:14,k:'14'
+,v:'Звенигородская',n:'metro_select',pos:'30.335496 59.922318'},{id:15,k:'15',v:'Звёздная',n:'metro_select',pos:'30.349555 59.833122'},{id:16,k:'16',v:'Кировский Завод',n:'metro_select',pos:'30.262158 59.879665'},{id:17,k:'17',v:'Комендантский Проспект',n:'metro_select',pos:'30.259131 60.008491'},{id:18,k:'18',v:'Крестовский Остров',n:'metro_select',pos:'30.259903 59.971812'},{id:19,k:'19',v:'Купчино',n:'metro_select',pos:'30.375588 59.829464'},{id:20,k:'20',v:'Ладожская',n:'metro_select',pos:'30.439692 59.932536'},{id:21,k:'21',v:'Ленинский Проспект',n:'metro_select',pos:'30.268545 59.851815'},{id:22,k:'22',v:'Лесная',n:'metro_select',pos:'30.344336 59.984760'},{id:23,k:'23',v:'Лиговский Проспект',n:'metro_select',pos:'30.355071 59.920785'},{id:24,k:'24',v:'Ломоносовская',n:'metro_select',pos:'30.441821 59.877281'},{id:25,k:'25',v:'Маяковская',n:'metro_select',pos:'30.355080 59.931522'},{id:26,k:'26',v:'Московская',n:'metro_select',pos:'30.321420 59.848967'},{id:27,k:'27',v:'Московские Ворота',n:'metro_
+select',pos:'30.317979 59.891539'},{id:28,k:'28',v:'Нарвская',n:'metro_select',pos:'30.275013 59.901156'},{id:29,k:'29',v:'Невский Проспект',n:'metro_select',pos:'30.327016 59.935502'},{id:30,k:'30',v:'Новочеркасская',n:'metro_select',pos:'30.412087 59.928952'},{id:31,k:'31',v:'Обухово',n:'metro_select',pos:'30.457739 59.848683'},{id:32,k:'32',v:'Озерки',n:'metro_select',pos:'30.321590 60.036987'},{id:33,k:'33',v:'Парк Победы',n:'metro_select',pos:'30.321860 59.866310'},{id:34,k:'34',v:'Парнас',n:'metro_select',pos:'30.331553 60.067465'},{id:35,k:'35',v:'Петроградская',n:'metro_select',pos:'30.311430 59.966439'},{id:36,k:'36',v:'Пионерская',n:'metro_select',pos:'30.296608 60.002476'},{id:37,k:'37',v:'Площадь Александра Невского',n:'metro_select',pos:'30.385389 59.924312'},{id:38,k:'38',v:'Площадь Восстания',n:'metro_select',pos:'30.360622 59.931540'},{id:39,k:'39',v:'Площадь Ленина',n:'metro_select',pos:'30.355870 59.955665'},{id:40,k:'40',v:'Площадь Мужества',n:'metro_select',pos:'30.366237 60.000007'},{id:
+41,k:'41',v:'Политехническая',n:'metro_select',pos:'30.370962 60.008887'},{id:42,k:'42',v:'Приморская',n:'metro_select',pos:'30.234580 59.948433'},{id:43,k:'43',v:'Пролетарская',n:'metro_select',pos:'30.470351 59.865189'},{id:44,k:'44',v:'Проспект Большевиков',n:'metro_select',pos:'30.466956 59.919802'},{id:45,k:'45',v:'Проспект Ветеранов',n:'metro_select',pos:'30.250525 59.842192'},{id:46,k:'46',v:'Проспект Просвещения',n:'metro_select',pos:'30.332550 60.051410'},{id:47,k:'47',v:'Пушкинская',n:'metro_select',pos:'30.329729 59.920645'},{id:48,k:'48',v:'Рыбацкое',n:'metro_select',pos:'30.500418 59.830861'},{id:49,k:'49',v:'Садовая',n:'metro_select',pos:'30.317476 59.926151'},{id:50,k:'50',v:'Сенная Площадь',n:'metro_select',pos:'30.320503 59.927008'},{id:51,k:'51',v:'Спасская',n:'metro_select',pos:'30.319704 59.926521'},{id:52,k:'52',v:'Спортивная',n:'metro_select',pos:'30.290598 59.951804'},{id:53,k:'53',v:'Старая Деревня',n:'metro_select',pos:'30.255376 59.989346'},{id:54,k:'54',v:'Технологический Институт',
+n:'metro_select',pos:'30.318626 59.916464'},{id:55,k:'55',v:'Удельная',n:'metro_select',pos:'30.315769 60.016663'},{id:56,k:'56',v:'Улица Дыбенко',n:'metro_select',pos:'30.483431 59.907419'},{id:57,k:'57',v:'Фрунзенская',n:'metro_select',pos:'30.317593 59.906237'},{id:58,k:'58',v:'Черная Речка',n:'metro_select',pos:'30.300884 59.985413'},{id:59,k:'59',v:'Чернышевская',n:'metro_select',pos:'30.360029 59.944499'},{id:60,k:'60',v:'Чкаловская',n:'metro_select',pos:'30.291964 59.961174'},{id:61,k:'61',v:'Электросила',n:'metro_select',pos:'30.318734 59.879240'}];
+ var metro_stations_10_array=eval(metro_stations_10);
+</script>
+
+<script src="http://api-maps.yandex.ru/1.1/?key=AO8lMksBAAAAiBnlFAIAm_va7hpvGPyp-AaNpuTIAPXRBboAAAAAAAAAAADbIfju5y4ijnflm3KVjeW6szBx6A==" type="text/javascript"></script>
+<script type="text/javascript">
+var submenu_id;
+function submenu_show(submenu_id){
+//$('div.submenu').hide();
+$('#'+ submenu_id + ' ~ div:first').toggle();
+}
+</script>	<script type="text/javascript">
+var xajaxRequestUri="http://www.cian.ru/cat.php?deal_type=1";
+var xajaxDebug=false;
+var xajaxStatusMessages=false;
+var xajaxWaitCursor=false;
+var xajaxDefinedGet=0;
+var xajaxDefinedPost=1;
+var xajaxLoaded=false;
+function xajax_show_street(){return xajax.call("show_street", arguments, 1);}
+function xajax_show_city(){return xajax.call("show_city", arguments, 1);}
+function xajax_test_price(){return xajax.call("test_price", arguments, 1);}
+function xajax_city_select(){return xajax.call("city_select", arguments, 1);}
+function xajax_sms_code(){return xajax.call("sms_code", arguments, 1);}
+function xajax_test_phone(){return xajax.call("test_phone", arguments, 1);}
+	</script>
+	<script type="text/javascript" src="xajax_js/xajax.js"></script>
+	<script type="text/javascript">
+window.setTimeout(function () { if (!xajaxLoaded) { alert('Error: the xajax Javascript file could not be included. Perhaps the URL is incorrect?\nURL: xajax_js/xajax.js'); } }, 6000);
+	</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+var yaParams = {auth: "no",view: "flatshow_guest_1",page: "flatshow", region: "", script: "cat.php"};
+function load_stat_counters(){
+$("#counters_div").append("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t14.1;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border=0 width=88 height=31><\/a>"+
+"<a href='http://top100.rambler.ru/top100/'>"+
+"<img src='http://counter.rambler.ru/top100.cnt?388140' alt='' width=1 height=1 border=0><\/a>"+
+"<a href='http://top100.rambler.ru/top100/'>"+
+"<img src='http://top100-images.rambler.ru/top100/banner-88x31-rambler-gray2.gif' alt=\"Rambler's Top100\" width=88 height=31 border=0><\/a>");
+}</script>
+</head>
+<body id="doc" onScroll="" onLoad="document.cookie='complaint=000434ec90feb5ff179a66fe9222617e; expires=Wed, 5 Mar 2059 00:00:01';document.cookie='js=on; expires=Wed, 5 Mar 2059 00:00:01';show_jqsearch();load_stat_counters();">
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30374201-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<noindex>
+<div class="np">
+<table  class="np" width="100%">
+<tr>
+<td style="vertical-align:middle;">
+<div id="modal_complaint" style="width:600px;display:none;cursor: default;" class="dialog">
+  <div class="dialog_title_bar">
+    <div class="dialog_caption">Сообщение модератору о некорректном объявлении</div>
+	<div class="rotes_kreuz"></div>
+  </div>
+   <div class="dialog_pane">
+    <div style="margin-top: 5px;">
+	<div><input type=hidden id=ucompl_user>
+<input type=hidden id=ucompl_object>
+<input type=hidden id=ucompl_id>
+<textarea id="ucompl_comment" style="width:100%;" rows="5"></textarea></div>
+	 <input name="read" type="hidden" value="1">
+	 <br><center><input type="button" id="yes" onclick='add_complaint($("#ucompl_object").val(),$("#ucompl_id").val(),"##"+$("#ucompl_comment").val(),$("#ucompl_user").val());' value="ОК" class="close_dialog dialog_button"/>
+<input type="button" id="no" value="Отмена" class="close_dialog dialog_button" /></center>
+    </div>
+ </div>
+</div><center><span style="cursor:pointer;text-decoration:underline;" class="np" onclick="location='/';"><img src="/images/search.png"><big><b>Новый поиск</b></big></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><img src="/img/mg_icon3-1.png">&nbsp;<a style="color:black;font-size:14px;" href="http://www.cian.ru/?mortgages=show" target="_blank" class="np"><b>Подбор ипотеки</b></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><img src="/img/up_16.png">&nbsp;<a style="color:#2682BF;font-size:14px;" href="http://www.cian.ru/premium_offers.php" class="np"><b>Премиум объявления</b></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;text-decoration:underline;" class="np" onclick="location='/users.php?mode=reg';"><img src="/images/reg.png"><big><b>Разместить объявление</b></big></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;text-decoration:underline;" class="np" onclick="window.open('/showcart.php');"><img src="/images/added_fav.png" alt="ваше Избранное"><big><b>ваш блокнот</b></big></span></center></td>
+<td align="right">
+
+<div class="np" style="color:blue;padding:6px;"><span onclick="$('#auth_form').toggle();$(this).parent().toggle();" style="font-size:14px;color:blue;cursor:pointer;border-bottom: 1px dotted blue;font-weight:normal;">Войти</span> / <span onclick="location='/users.php?mode=reg';" style="font-size:14px;color:blue;cursor:pointer;border-bottom: 1px dotted blue;font-weight:normal;">Зарегистрироваться</span></div><div  style="width:350px;background-color:#475257;padding:7px;display:none;" class="np" id="auth_form" align="center">
+
+<form action=/users.php?mode=login method=post>
+<input name='remember' type='hidden' value='1'>
+<table>
+<tr>
+<td style="color:#BCC1C5;">ID <input title="Введите свой ID" size=11 name=id_user></td><td style="color:#BCC1C5;">пароль</td><td><input title="Введите свой пароль" size=11 name=password type=password>&nbsp;<input type=submit value="войти"></td>
+</tr>
+</table>
+<div>
+<span title="регистрация нового пользователя" style="color:#BCC1C5; cursor: pointer; border-bottom: 1px dotted #BCC1C5;" class="np" onclick="location='/users.php?mode=reg';">зарегистрироваться</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span title="востановление утерянного пароля" style="color: #BCC1C5; border-bottom: 1px dotted #BCC1C5;" class="np" onclick="location='/users.php?mode=lostpassword';">напомнить&nbsp;пароль</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</form>
+
+</div>
+</td>
+</tr>
+</table>
+</div>
+<br>
+</noindex>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" id="tbody">
+  <tr>
+    <td>
+      <table cellspacing="1" cellpadding="1" border="0" width="100%">
+        <tr>
+          <td>
+
+<div>
+<fieldset style="display:inline;padding:1px;background:#B9CDD2;">
+<h1 style="color:#7A7A7A;padding-left:10px;">Снять на длительный срокоднокомнатную квартиру в Москве</h1>
+<table style="width:100%;padding: 5px;"><tr><td align="center" style="width:180px;" id="pagenav_top">Найдено предложений: <font color="#00749F">2</font> </td><td style="width:450px;"><table>
+<tr>
+<td>
+<span class="np">
+<fieldset style="display:inline; padding: 5px;background: #d2dbda;">
+
+<!--noindex-->
+<img id="loading_jqsearch" alt="загрузка..." src="/images/progress.gif">
+<div id="jq_search" style="display:none;">
+<form id="change_search" name="change_search" action="/cat.php" method="post">
+<input type="hidden" name="totime" value="">
+<input type="hidden" name="deal_type" value="1">
+<input type="hidden" name="for_day" value="">
+<input id="btn_submit_search" style="background:rgb(101, 154, 177);color:white;display:none;" onclick="$('#change_search').submit();" type="button" value="Искать"> <input id="btn_change_search" class="btn-slide" title="Редактирование текущих параметров поиска" alt="Редактирование текущих параметров поиска" type="button" value="Изменить условия поиска">  <input style="width: 95px;" type="button" id="btn_new_search" value="Новый поиск" onClick="location='/'"> <span id="old_select"> </span>
+  <input style="color:red;" id="subscribe_show" type=button onclick="$('#pagenav_top').toggle();$('#adw_top').toggle();$('#btn_change_search').toggle();$('#btn_new_search').toggle();$('#to_rab_show').toggle();$('#subscribe_dialog').show();$(this).hide();" value="свежее &gt;&gt; e-mail">
+<div id="subscribe_dialog" style="display:none;">
+<fieldset style="display:inline; padding: 10px;">
+<span style='color:red;font-size:20px;'>Мы можем отправлять на e-mail свежие предложения, подходящие под текущие условия поиска</span><br>
+
+<table>
+<tr><td>E-mail </td><td><input id="subscribe_email" type="text" name="email" size="40"><br><small>На указанный вами E-mail придет письмо с кодом активации подписки</small></td></tr>
+<br>
+<tr><td>Частота отправки&nbsp;</td><td><select name="freq"><option value="1" selected>Оперативно (по мере поступления)</option>
+<option value="2">Раз в сутки (ночью)</option>
+</select></td></tr>
+
+<tr><td>Срок действия подписки&nbsp;</td><td><select name="sub_period"><option value="86400">1 день</option>
+<option value="172800">2 дня</option>
+<option value="259200">3 дня</option>
+<option value="604800">неделя</option>
+<option value="1209600" selected>две недели</option>
+<option value="2592000">месяц</option>
+</select></td></tr>
+
+</table>
+<input type="hidden" name="att_type" value="1">
+<center>
+<input type="button" value="Сохранить" onclick="if(isValidEmail($('#subscribe_email').val()))$('#change_search').submit(); else alert('E-mail указан с ошибкой или не указан вообще');"> <input type="button" value="Отмена" onclick="$('#subscribe_email').val('');$('#subscribe_dialog').hide();$('#subscribe_show').show();$('#pagenav_top').toggle();$('#adw_top').toggle();$('#btn_change_search').toggle();$('#btn_new_search').toggle();$('#to_rab_show').toggle();">
+</center>
+</div>
+<span id="to_rab_span"> </span>
+<div class="panel" id="panel1">
+
+
+<br>
+<ul>
+<div>
+<fieldset style="padding: 3px;">
+<legend><b style="color: #00749f;">где ищем</b></legend>
+<select onchange="prepare_search();" id="obl_id" name="obl_id"><option value="0">не выбрано...</option>
+<option value="-1">Москва и Московская область</option>
+<option value="1" selected>Москва</option>
+<option value="83">населенный пункт в черте Москвы</option>
+<option value="2">Московская область</option>
+<option value="10">Санкт-Петербург</option>
+<option value="11">Ленинградская область</option>
+<option value="3">Владимирская область</option>
+<option value="4">Калужская область</option>
+<option value="5">Рязанская область</option>
+<option value="9">Смоленская область</option>
+<option value="6">Тверская область</option>
+<option value="7">Тульская область</option>
+<option value="8">Ярославская область</option>
+<option value="12">Амурская область</option>
+<option value="13">Архангельская область</option>
+<option value="14">Астраханская область</option>
+<option value="15">Белгородская область</option>
+<option value="16">Брянская область</option>
+<option value="17">Волгоградская область</option>
+<option value="18">Вологодская область</option>
+<option value="19">Воронежская область</option>
+<option value="20">Ивановская область</option>
+<option value="21">Иркутская область</option>
+<option value="22">Калининградская область</option>
+<option value="85">Камчатский край</option>
+<option value="23">Кемеровская область</option>
+<option value="24">Кировская область</option>
+<option value="25">Костромская область</option>
+<option value="26">Курганская область</option>
+<option value="27">Курская область</option>
+<option value="28">Липецкая область</option>
+<option value="29">Магаданская область</option>
+<option value="30">Мурманская область</option>
+<option value="31">Нижегородская область</option>
+<option value="32">Новгородская область</option>
+<option value="33">Новосибирская область</option>
+<option value="34">Омская область</option>
+<option value="35">Оренбургская область</option>
+<option value="36">Орловская область</option>
+<option value="37">Пензенская область</option>
+<option value="84">Пермский край</option>
+<option value="38">Псковская область</option>
+<option value="39">Ростовская область</option>
+<option value="40">Самарская область</option>
+<option value="41">Саратовская область</option>
+<option value="42">Сахалинская область</option>
+<option value="43">Свердловская область</option>
+<option value="44">Тамбовская область</option>
+<option value="45">Томская область</option>
+<option value="46">Тюменская область</option>
+<option value="47">Ульяновская область</option>
+<option value="48">Челябинская область</option>
+<option value="49">Забайкальский край</option>
+<option value="71">Алтайский край</option>
+<option value="53">Республика Алтай</option>
+<option value="50">республика Адыгея</option>
+<option value="51">республика Башкортостан</option>
+<option value="52">Республика Бурятия</option>
+<option value="54">республика Дагестан</option>
+<option value="55">республика Ингушская</option>
+<option value="56">республика Кабардино-Балкарская</option>
+<option value="57">республика Калмыкия</option>
+<option value="58">республика Карачаево-Черкесская</option>
+<option value="59">республика Карелия</option>
+<option value="60">республика Коми</option>
+<option value="61">республика Марий Эл</option>
+<option value="62">республика Мордовия</option>
+<option value="63">Республика Саха (Якутия)</option>
+<option value="64">республика Северная Осетия-Алания</option>
+<option value="65">республика Татарстан</option>
+<option value="66">Республика Тыва</option>
+<option value="67">республика Удмуртская</option>
+<option value="68">Республика Хакасия</option>
+<option value="69">республика Чеченская</option>
+<option value="70">республика Чувашская</option>
+<option value="72">Краснодарский край</option>
+<option value="73">Красноярский край</option>
+<option value="74">Приморский край</option>
+<option value="75">Ставропольский край</option>
+<option value="76">Хабаровский край</option>
+<option value="77">Еврейская автономная область</option>
+<option value="78">Ненецкий автономный округ</option>
+<option value="80">Ханты-Мансийский автономный округ</option>
+<option value="81">Чукотский автономный округ</option>
+<option value="82">Ямало-Ненецкий автономный округ</option>
+</select>&nbsp;&nbsp;&nbsp;<span id='mo'></span><br>
+<span id="city_search">
+<font color=blue>введите несколько букв названия улицы</font><br><input name="street" id="street" size="20"><input type="button" value="Найти" onclick="xajax_show_street(document.getElementById('street').value,'',0);">&nbsp;<div id="Links"></div><div id="Streets"></div><font color=green>выбраны улицы:</font><br><div id="multi_street"></div>
+</span>
+</div>
+
+<div id="time_from_metro">
+<fieldset style="display:inline; padding: 3px;">
+<legend><b style="color: #00749f;">удаленность от Метро до дома</b></legend>
+<select name="only_foot"><option value="0">не важно</option>
+<option value="2" selected>пешком (реально)</option>
+<option value="1">пешком (по мнению агента)</option>
+<option value="-1">транспортом</option>
+</select> от <input name="foot_min2" size=1 value=""> до <input name="foot_min" size=1 value="15"> минут<br>
+</fieldset>
+</div>
+<div id="metro_selected_form">
+<fieldset style="display:inline; padding: 3px;">
+<legend><b style="color: #00749f;">станции метро</b></legend>
+<select id="metros" name="id_metro"><option value=0>&nbsp;</option>
+<option value="85">Авиамоторная</option>
+<option value="13">Автозаводская</option>
+<option value="97">Академическая</option>
+<option value="53">Александровский сад</option>
+<option value="105">Алексеевская</option>
+<option value="135">Алтуфьево</option>
+<option value="156">Аннино</option>
+<option value="50">Арбатская</option>
+<option value="5">Аэропорт</option>
+<option value="109">Бабушкинская</option>
+<option value="57">Багратионовская</option>
+<option value="71">Баррикадная</option>
+<option value="47">Бауманская</option>
+<option value="69">Беговая</option>
+<option value="7">Белорусская</option>
+<option value="93">Беляево</option>
+<option value="131">Бибирево</option>
+<option value="30">Библиотека Ленина</option>
+<option value="207">Борисово</option>
+<option value="120">Боровицкая</option>
+<option value="107">Ботанический сад</option>
+<option value="145">Братиславская</option>
+<option value="195">Бунинская аллея</option>
+<option value="106">ВДНХ</option>
+<option value="16">Варшавская</option>
+<option value="24">Вернадского проспект</option>
+<option value="112">Владыкино</option>
+<option value="2">Водный стадион</option>
+<option value="3">Войковская</option>
+<option value="77">Волгоградский проспект</option>
+<option value="142">Волжская</option>
+<option value="203">Волоколамская</option>
+<option value="157">Воробьевы горы</option>
+<option value="198">Выставочная</option>
+<option value="81">Выхино</option>
+<option value="6">Динамо</option>
+<option value="115">Дмитровская</option>
+<option value="132">Добрынинская</option>
+<option value="21">Домодедовская</option>
+<option value="164">Донского Дмитрия бульвар</option>
+<option value="205">Достоевская</option>
+<option value="140">Дубровка</option>
+<option value="209">Зябликово</option>
+<option value="43">Измайловская</option>
+<option value="94">Калужская</option>
+<option value="18">Кантемировская</option>
+<option value="17">Каховская</option>
+<option value="15">Каширская</option>
+<option value="52">Киевская</option>
+<option value="74">Китай-город</option>
+<option value="144">Кожуховская</option>
+<option value="14">Коломенская</option>
+<option value="35">Комсомольская</option>
+<option value="92">Коньково</option>
+<option value="22">Красногвардейская</option>
+<option value="133">Краснопресненская</option>
+<option value="36">Красносельская</option>
+<option value="34">Красные ворота</option>
+<option value="139">Крестьянская застава</option>
+<option value="29">Кропоткинская</option>
+<option value="62">Крылатское</option>
+<option value="73">Кузнецкий мост</option>
+<option value="79">Кузьминки</option>
+<option value="60">Кунцевская</option>
+<option value="48">Курская</option>
+<option value="55">Кутузовская</option>
+<option value="98">Ленинский проспект</option>
+<option value="32">Лубянка</option>
+<option value="143">Люблино</option>
+<option value="87">Марксистская</option>
+<option value="204">Марьина роща</option>
+<option value="146">Марьино</option>
+<option value="8">Маяковская</option>
+<option value="110">Медведково</option>
+<option value="197">Международная</option>
+<option value="117">Менделеевская</option>
+<option value="196">Митино</option>
+<option value="61">Молодежная</option>
+<option value="202">Мякинино</option>
+<option value="124">Нагатинская</option>
+<option value="125">Нагорная</option>
+<option value="126">Нахимовский проспект</option>
+<option value="82">Новогиреево</option>
+<option value="11">Новокузнецкая</option>
+<option value="134">Новослободская</option>
+<option value="89">Новоясеневская</option>
+<option value="95">Новые черемушки</option>
+<option value="100">Октябрьская</option>
+<option value="67">Октябрьское поле</option>
+<option value="20">Орехово</option>
+<option value="111">Отрадное</option>
+<option value="31">Охотный Ряд</option>
+<option value="12">Павелецкая</option>
+<option value="28">Парк Культуры</option>
+<option value="165">Парк Победы</option>
+<option value="44">Партизанская</option>
+<option value="42">Первомайская</option>
+<option value="83">Перово</option>
+<option value="113">Петровско-Разумовская</option>
+<option value="141">Печатники</option>
+<option value="59">Пионерская</option>
+<option value="63">Планерная</option>
+<option value="86">Площадь Ильича</option>
+<option value="49">Площадь революции</option>
+<option value="68">Полежаевская</option>
+<option value="121">Полянка</option>
+<option value="130">Пражская</option>
+<option value="38">Преображенская площадь</option>
+<option value="76">Пролетарская</option>
+<option value="136">Проспект Мира</option>
+<option value="96">Профсоюзная</option>
+<option value="72">Пушкинская</option>
+<option value="1">Речной вокзал</option>
+<option value="104">Рижская</option>
+<option value="138">Римская</option>
+<option value="80">Рязанский проспект</option>
+<option value="116">Савеловская</option>
+<option value="108">Свиблово</option>
+<option value="127">Севастопольская</option>
+<option value="45">Семеновская</option>
+<option value="122">Серпуховская</option>
+<option value="192">Скобелевская улица</option>
+<option value="201">Славянский бульвар</option>
+<option value="51">Смоленская</option>
+<option value="4">Сокол</option>
+<option value="37">Сокольники</option>
+<option value="26">Спортивная</option>
+<option value="206">Сретенский бульвар</option>
+<option value="200">Строгино</option>
+<option value="54">Студенческая</option>
+<option value="102">Сухаревская</option>
+<option value="64">Сходненская</option>
+<option value="75">Таганская</option>
+<option value="9">Тверская</option>
+<option value="10">Театральная</option>
+<option value="78">Текстильщики</option>
+<option value="91">Теплый стан</option>
+<option value="114">Тимирязевская</option>
+<option value="88">Третьяковская</option>
+<option value="199">Трубная</option>
+<option value="123">Тульская</option>
+<option value="103">Тургеневская</option>
+<option value="65">Тушинская</option>
+<option value="70">Улица 1905 года</option>
+<option value="194">Улица Горчакова</option>
+<option value="40">Улица Подбельского</option>
+<option value="25">Университет</option>
+<option value="193">Ушакова адмирала бульвар</option>
+<option value="58">Филевский парк</option>
+<option value="56">Фили</option>
+<option value="27">Фрунзенская</option>
+<option value="19">Царицыно</option>
+<option value="118">Цветной бульвар</option>
+<option value="39">Черкизовская</option>
+<option value="128">Чертановская</option>
+<option value="119">Чеховская</option>
+<option value="33">Чистые пруды</option>
+<option value="137">Чкаловская</option>
+<option value="99">Шаболовская</option>
+<option value="208">Шипиловская</option>
+<option value="84">Шоссе энтузиастов</option>
+<option value="41">Щелковская</option>
+<option value="66">Щукинская</option>
+<option value="46">Электрозаводская</option>
+<option value="23">Юго-Западная</option>
+<option value="129">Южная</option>
+<option value="155">Янгеля Академика</option>
+<option value="90">Ясенево</option>
+</select><input onclick="add_metro();" type="button" value="Выбрать"><br>
+<font color=green>Выбрано:</font><br>
+<div id="selected_metro">
+
+</div>
+</div>
+<div id='llspn_search_form'>
+<fieldset style="display:inline; padding: 3px;">
+<legend><b style="color: #00749f;">поиск по Яндекс.Картам</b></legend>
+<input type=button value="задать участок карты для поиска" onclick="showMap2();"><span id="llspn_arr"></span></div><div id="modal_dialog" style="width:810px;display:none;cursor: default;" class="dialog">
+  <div class="dialog_title_bar">
+    <div class="dialog_caption"><b style="color:red">КАК ЭТО РАБОТАЕТ:</b>&nbsp;&nbsp;Выделите область на карте, в которой нужно искать объекты и нажмите кнопку Сохранить</div>
+	<div class="rotes_kreuz"></div>
+  </div>
+   <div class="dialog_pane">
+	<input type="hidden" id="llspn"><input type="hidden" id="llspn_source"><input type="hidden" id="llspn_next">
+<input type="button" onclick="set_curr_dist();" class="close_dialog dialog_button" value="Сохранить"><input class="close_dialog dialog_button" onclick="clear_curr_dist();" type="button" value="Отмена">
+<input id="llspn_descr" type="hidden"><span id="curr_polygons"></span>
+<div id="YMapsID" style="width:800px;height:500px"></div>
+   </div>
+</div>
+<div>
+<fieldset style="display:inline; padding: 3px;">
+<legend><b style="color: #00749f;">срок аренды</b></legend>
+<select name="type"><option value="0">любой срок аренды</option>
+<option value="2">посуточная аренда</option>
+<option value="-2" selected>длительный срок аренды</option>
+<option value="3">сезонная сдача</option>
+<option value="4">срок от месяца и более</option>
+</select>
+</div>
+<div>
+<fieldset style="display:inline; padding: 3px;">
+<legend><b style="color: #00749f;">дата публикации</b></legend>
+<select name="totime"><option value="-1">любое время</option>
+<option value="-2">за сегодня</option>
+<option value="300">за 5мин</option>
+<option value="600">за 10мин</option>
+<option value="900">за 15мин</option>
+<option value="1200">за 20мин</option>
+<option value="1800">за 30мин</option>
+<option value="3600">за час</option>
+<option value="7200">за 2ч</option>
+<option value="10800">за 3ч</option>
+<option value="14400">за 4ч</option>
+<option value="18000">за 5ч</option>
+<option value="21600">за 6ч</option>
+<option value="43200">за 12ч</option>
+<option value="64800">за 18ч</option>
+<option value="86400">за 24ч</option>
+<option value="129600">за 36ч</option>
+<option value="172800">за 48ч</option>
+<option value="259200">за 72ч</option>
+<option value="432000">за 5сут</option>
+<option value="864000">за 10сут</option>
+<option value="2592000">за 30сут</option>
+</select>
+</div>
+</ul>
+<ul>
+<div>
+<fieldset style="display:inline; padding: 3px;">
+<legend><b style="color: #00749f;">количество комнат</b></legend>
+<input type="checkbox" name="room0" value="1">Комната <input type="checkbox" name="room1" value="1" checked>1 <input type="checkbox" name="room2" value="1">2 <input type="checkbox" name="room3" value="1">3 <input type="checkbox" name="room4" value="1">4 <input type="checkbox" name="room5" value="1">5 <input type="checkbox" name="room6" value="1">6(+)
+</div>
+<div>
+<fieldset style="display:inline; padding: 3px;">
+<legend><b style="color: #00749f;">цена</b></legend>
+<table border=0><tr>
+<td>
+от <input name="minprice" size="10" value="25000"> до <input name="maxprice" size="10" value="33000">
+</td>
+<td>
+<select name="currency"><option value="1">$</option>
+<option value="2" selected>р.</option>
+<option value="3">&euro;</option>
+</select>
+</td>
+</tr></table>
+</div>
+<div>
+<fieldset style="display:inline; padding: 3px;">
+<legend><b style="color: #00749f;">предоплата (с учетом страх.депозита)</b></legend>
+была бы не более <select name="maxprepay"><option value="0" selected>не выбрано...</option>
+<option value="1">1 месяц</option>
+<option value="2">2 месяца</option>
+<option value="3">3 месяца</option>
+<option value="4">4 месяца</option>
+<option value="5">5 месяцев</option>
+<option value="6">6 месяцев</option>
+<option value="7">7 месяцев</option>
+<option value="8">8 месяцев</option>
+<option value="9">9 месяцев</option>
+<option value="10">10 месяцев</option>
+<option value="11">11 месяцев</option>
+<option value="12">12 месяцев</option>
+<option value="18">18 месяцев</option>
+<option value="24">2 года</option>
+<option value="30">2,5 года</option>
+<option value="36">3 года</option>
+</select>
+</div>
+<div>
+<fieldset style="display:inline; padding: 3px;">
+<legend><b style="color: #00749f;">метраж</b></legend>
+<table>
+<tr>
+<td>кухня</td><td>от <input name="minkarea" size="2" value="">м<sup>2</sup> до <input name="maxkarea" size="2" value="">м<sup>2</sup></td>
+</tr>
+<tr>
+<td>жилая</td><td>от <input name="minlarea" value="" size="4">м<sup>2</sup> до <input value="" name="maxlarea" size="4">м<sup>2</sup></td>
+</tr>
+<tr>
+<td>общая</td><td>от <input name="minarea" value="" size="4">м<sup>2</sup> до <input value="" name="maxarea" size="4">м<sup>2</sup></td>
+</tr>
+</table>
+</div>
+<div>
+<fieldset style="display:inline; padding: 3px;">
+<legend><b style="color: #00749f;">этажность</b></legend>
+этаж: от <input name="minfloor" size="2" value=""> до <input name="maxfloor" size="2" value="">&nbsp;<input type="checkbox" name="floornl" value="1" >не послед.<br>
+этажей : от <input name="minfloorn" size="2" value=""> до <input name="maxfloorn" size="2" value="">
+<br>
+</div>
+</ul>
+<ul>
+<div>
+<fieldset style="display:inline; padding: 3px;">
+<legend><b style="color: #00749f;">в объявлении</b></legend>
+<table>
+<tr>
+<td>мебель жилая</td>
+<td>
+<input type="radio" name="mebel" value="1">да 
+<input type="radio" name="mebel" value="0" checked>не важно 
+<input type="radio" name="mebel" value="-1">нет 
+
+</td>
+</tr>
+<tr>
+<td>мебель на кухне</td>
+<td>
+<input type="radio" name="mebel_k" value="1">да 
+<input type="radio" name="mebel_k" value="0" checked>не важно 
+<input type="radio" name="mebel_k" value="-1">нет 
+
+</td>
+</tr>
+<tr>
+<td>телефон</td><td>
+<input type="radio" name="phone" value="1">да 
+<input type="radio" name="phone" value="0" checked>не важно 
+<input type="radio" name="phone" value="-1">нет 
+
+</td>
+</tr>
+<tr>
+<td>холодильник</td><td>
+<input type="radio" name="rfgr" value="1">да 
+<input type="radio" name="rfgr" value="0" checked>не важно 
+<input type="radio" name="rfgr" value="-1">нет 
+
+</td>
+</tr>
+<tr>
+<td>телевизор</td><td>
+<input type="radio" name="tv" value="1">да 
+<input type="radio" name="tv" value="0" checked>не важно 
+<input type="radio" name="tv" value="-1">нет 
+
+</td>
+</tr>
+<tr>
+<td>стир.машина</td><td>
+<input type="radio" name="wm" value="1">да 
+<input type="radio" name="wm" value="0" checked>не важно 
+<input type="radio" name="wm" value="-1">нет 
+
+</td>
+</tr>
+<tr>
+<td><b style="color: blue">агентам не звонить</b></td><td>
+<input type="radio" name="cl" value="1">да 
+<input type="radio" name="cl" value="0" checked>не важно 
+<input type="radio" name="cl" value="-1">нет 
+
+</td>
+</tr>
+
+
+<tr><td>наличие&nbsp;слова</td><td><input name="context" value="" size=20 maxlength="500"></td></tr>
+<tr><td>отсутствие&nbsp;слова</td><td><input name="acontext" value="" size=20 maxlength="500"></td></tr>
+</table>
+<input type="checkbox" name="kids" value=1>с&nbsp;детьми <input type="checkbox" name="pets" value=1>с&nbsp;животным <input type="checkbox" name="minbalkon" value=1>балкон
+<br><input type="checkbox" title="Отобрать объявления с фотографиями" name="wp" value="1">наличие фото 
+</div>
+</ul>
+</div>
+</form>
+</div>
+<!--/noindex-->
+</fieldset>
+</span>
+</td>
+
+</tr>
+</table></td><td style="vertical-align:center;" align="center" id="adw_top"><div class="np"><!--noindex-->
+<span id="adcontainer_cat"></span>
+<script src="http://www.google.com/adsense/search/ads.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+var pageOptions = {
+  'pubId' : 'pub-6301915001529292',
+  'query' : 'Снять однокомнатную квартиру на длительный срок в Москве переезд квартиры ',
+  'siteLinks' : false,
+  'channel' : 'cat_flat',
+  'hl' : 'ru'
+};
+
+var adblock = {
+  'container' : 'adcontainer_cat',
+  'number' : '1',
+  'lines' : '1',
+  'width' : '600px',
+  'fontSizeTitle' : '13px',
+  'fontSizeDescription' : '12px',
+  'colorBackground' : '#B9CDD2',
+  'colorBorder' : '#B9CDD2'
+};
+
+new google.ads.search.Ads(pageOptions, adblock);
+</script>
+<!--/noindex--></div></td></tr></table>
+<table cellspacing=0 class="cat"><tr bgcolor="#D2DBDA"><td class="cat">№</td><td class="cat" align="center">от Метро</td><td class="cat" align="center">кол-во комнат</td><td class="cat" align="center">Площадь</td><td class="cat" align="center">Цена</td><td class="cat" align="center"><big>%</big></td><td class="cat" align="center">Этаж</td><td align="center">Доп.свед.</td><td class="cat" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Контакты&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="cat" align="center">Комментарий</td></tr>
+<tr id="tr_8455478" bgcolor=white>
+<td class="cat">1</td>
+<td class="cat" id="dl2m_8455478_metro" align="center"><br><a  style="color:black;" target="_blank" href="/cat.php?deal_type=1&obl_id=1&street[0]=421">Ракетный бульвар</a>  <a  style="color:grey;" target="_blank" href="/cat.php?deal_type=1&obl_id=1&street[0]=421&house=7&ohn=1">д.7</a><br><br>3мин. пешком<br><a  href="/cat.php?deal_type=1&obl_id=1&metro[0]=106" target="_blank">м.ВДНХ</a></td>
+<td class="cat" id="dl2m_8455478_room" align="center">1-комн. квартира</td>
+<td class="cat" id="dl2m_8455478_rooms" align="center">кухня:&nbsp;6м<sup>2</sup><br><br>жилая:&nbsp;21м<sup>2</sup><br><br>общая:&nbsp;32м<sup>2</sup><br><br></td>
+<td class="cat" id="dl2m_8455478_price"  align="center">32,000р.<br><br>1мес. предоплата<br>+ депозит<br><br>длительный срок<br>(от года)</td>
+<td class="cat" id="dl2m_8455478_com" align="center">80%<hr>(25,600р.)</td>
+<td class="cat" id="dl2m_8455478_floor" align="center">8/9</td>
+<td class="cat" id="dl2m_8455478_dopsved" align="center">кух.мебель<br>жил.мебель<br>телефон<br>ТВ<br>стир.машина<br>холодильник<br>балкон<br>можно&nbsp;с&nbsp;животными<br>можно&nbsp;с&nbsp;детьми<br></td>
+<td  class="cat" id="dl2m_8455478_contacts" align="center"><a class=n href='callto://+79036144771'>(903)614-4771</a></td>
+<td class="cat" id="dl2m_8455478_comment">
+<span id='added_8455478'><font color="#0000A0">31.08.12 16:03</font></span> <a rel="nofollow" href="/cat.php?id_user=22725" target="_blank">&lt;частный маклер&gt;</a> <p><span title="описание акции" onclick="window.open('/fairplay.php');" style='padding:2px;color:black; cursor:pointer; border-bottom: 1px dashed red;border-top: 1px dashed red; border-left: 1px dashed red; border-right: 1px dashed red;'>&nbsp;участник&nbsp;акции&nbsp;</span>&nbsp;&nbsp;&nbsp;</p>Сдается 1-комн.кв. рядом с метро ВДНХ,чистый подьезд ( после ремонта),стеклопакеты, застекленный балкон, душевая кабина,вся необходимая мебель, на длительный срок ,т.89036144771&nbsp;
+<span id="ucompl_link_flat_8455478"></span>
+<br>
+
+<div style="padding:10px;" align="right"><a title="карточка объявления" href="/showphoto.php?id_flat=8455478" target="_blank"><font color=blue>[&equiv;]</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span title="показать этот адрес на карте" id="o_8455478" class="np" style="color:green;border-bottom: 1px dotted;cursor:pointer;" onclick="init('8455478','37.645555','55.819378','37.641315 55.821032','flat',1,15);">на&nbsp;карте</span></div>
+
+<div id="m_8455478" style="height:400px; display:none;"></div>
+</td>
+</tr>
+<tr id="tr_8403204" bgcolor=white>
+<td class="cat">2</td>
+<td class="cat" id="dl2m_8403204_metro" align="center"><br><a  style="color:black;" target="_blank" href="/cat.php?deal_type=1&obl_id=1&street[0]=1020">улица Космонавтов</a>  <a  style="color:grey;" target="_blank" href="/cat.php?deal_type=1&obl_id=1&street[0]=1020&house=12&ohn=1">д.12</a><br><br>7мин. пешком<br><a  href="/cat.php?deal_type=1&obl_id=1&metro[0]=106" target="_blank">м.ВДНХ</a></td>
+<td class="cat" id="dl2m_8403204_room" align="center">1-комн. квартира</td>
+<td class="cat" id="dl2m_8403204_rooms" align="center">кухня:&nbsp;10м<sup>2</sup><br><br>жилая:&nbsp;20м<sup>2</sup><br><br>общая:&nbsp;41м<sup>2</sup><br><br></td>
+<td class="cat" id="dl2m_8403204_price"  align="center">29,000р.<br><br>1мес. предоплата<br><br>длительный срок<br>(от года)</td>
+<td class="cat" id="dl2m_8403204_com" align="center">100%<hr>(29,000р.)</td>
+<td class="cat" id="dl2m_8403204_floor" align="center">8/9</td>
+<td class="cat" id="dl2m_8403204_dopsved" align="center">кух.мебель<br>жил.мебель<br>телефон<br>ТВ<br>стир.машина<br>холодильник<br>балкон<br>можно&nbsp;с&nbsp;животными<br>можно&nbsp;с&nbsp;детьми<br></td>
+<td  class="cat" id="dl2m_8403204_contacts" align="center"><a class=n href='callto://+79161240011'>(916)124-0011</a></td>
+<td class="cat" id="dl2m_8403204_comment">
+<span id='added_8403204'><font color="#0000A0">21.08.12 12:32</font></span> <a rel="nofollow" href="/cat.php?id_user=198585" target="_blank">&lt;ID:198585&gt;</a> <p><span title="описание акции" onclick="window.open('/fairplay.php');" style='padding:2px;color:red; cursor:pointer; border-bottom: 1px dashed black;border-top: 1px dashed black; border-left: 1px dashed black; border-right: 1px dashed black;'><span style='color:black;'>&nbsp;исключен&nbsp;из&nbsp;акции&nbsp;</span></span>&nbsp;&nbsp;&nbsp;</p><noindex><b>просьба агентам не звонить</b></noindex> по какой-то причине этот агент не готов сотрудничать с другими агентами...<br>Квартира после качественного ремонта. Вся мебель и техника новые. В ванной плитка до потолка. Полы - ламинат. Лоджия застеклена.&nbsp;
+<span id="ucompl_link_flat_8403204"></span>
+<br>
+
+<div style="padding:10px;" align="right"><a title="карточка объявления" href="/showphoto.php?id_flat=8403204" target="_blank"><font color=blue>[&equiv;]</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span title="показать этот адрес на карте" id="o_8403204" class="np" style="color:green;border-bottom: 1px dotted;cursor:pointer;" onclick="init('8403204','37.652759','55.820845','37.641315 55.821032','flat',1,15);">на&nbsp;карте</span></div>
+
+<div id="m_8403204" style="height:400px; display:none;"></div>
+</td>
+</tr></table><div style="padding:5px" class="np"><table><tr><td>Найдено: <font color="#00749F">2</font></td><td align="center" width="500px"></td></tr></table><div style="padding:5px"></div></div></fieldset></div><!--noindex-->
+<!-- Яндекс.Директ -->
+<script type="text/javascript">
+yandex_partner_id = 67132;
+yandex_site_bg_color = 'FFFFFF';
+yandex_site_charset = 'windows-1251';
+yandex_ad_format = 'direct';
+yandex_font_size = 1;
+yandex_direct_type = 'horizontal';
+yandex_direct_limit = 4;
+yandex_direct_header_bg_color = 'F0F7F7';
+yandex_direct_title_color = '0000CC';
+yandex_direct_url_color = '006600';
+yandex_direct_all_color = 'F0F7F7';
+yandex_direct_text_color = '000000';
+yandex_direct_hover_color = '0066FF';
+yandex_direct_favicon = true;
+document.write('<sc'+'ript type="text/javascript" src="http://an.yandex.ru/system/context.js"></sc'+'ript>');
+</script>
+<!--/noindex-->            <br>
+            <br>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<div align="center" class="np">
+</div>
+<br>
+<center>
+<font color="#A6A6A6">&laquo;ЦИАН&raquo;&nbsp;&nbsp;Copyright &reg; 2002-2012<br>Все права защищены. Перепечатка и использование материалов сайта разрешена только с согласия администрации сайта.</font><br><br><span style="cursor:pointer;color:#A6A6A6;text-decoration:underline;" onclick="window.open('/office_place.php')">контакты</span><br><br>
+</center>
+<div class="np">
+<center>
+</center>
+</div>
+<div class="np" align="center" id="counters_div">
+<br>
+<!-- Yandex.Metrika counter -->
+<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+<div style="display:none;"><script type="text/javascript">
+try { var yaCounter67132 = new Ya.Metrika({id:67132,
+          clickmap:true,
+          accurateTrackBounce:true, webvisor:true,type:1});}
+catch(e) { }
+</script></div>
+<noscript><div><img src="//mc.yandex.ru/watch/67132?cnt-class=1" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</div>
+</body>
+</html>
