@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Поиск квартир на Бабушкинской</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"
+            type="text/javascript"></script>
+
+    <script src="http://localhost:3000/" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+
+        function get_popup_style(date) {
+            curr_date = new Date();
+            difference = curr_date - date;
+            hours = Math.round(difference / (1000 * 60 * 60));
+
+            color_scheme = ''
+            switch (true) {
+                case hours <= 8:
+                    color_scheme = 'twirl#redStretchyIcon'
+                    break
+                case color_scheme <= 24:
+                    color_scheme = 'twirl#orangeStretchyIcon'
+                    break
+                case color_scheme <= 72:
+                    color_scheme = 'twirl#yellowStretchyIcon'
+                    break
+                default:
+                    color_scheme = 'twirl#whiteStretchyIcon'
+            }
+
+            return color_scheme
+        }
+        function create_flat(res, flat) {
+            res.geoObjects.options.set("preset", "twirl#redStretchyIcon");
+            var d = new Date();
+            d.setTime(Date.parse(flat.date))
+
+            var curr_date = d.getDate();
+            var curr_month = d.getMonth() + 1; //Months are zero based
+            var curr_min = d.getMinutes();
+            var curr_hour = d.getHours();
+
+            color_scheme = get_popup_style(d)
+
+            var date = curr_hour + ":" + curr_min + " " + curr_date + "." + curr_month
+
+            info = ''
+            for (k in flat.info) {
+                info += flat.info[k] + '<br>'
+
+            }
+
+            body = '<br><b>' + flat.payment + ' руб.</b>' +
+                    '<br>' + date + '<br>' + info;
+
+
+            res.geoObjects.options.set("preset", color_scheme);
+
+            res.geoObjects.each(function (geoObject) {
+                geoObject.properties.set({
+                    iconContent:flat.payment,
+                    balloonContentHeader:flat.address + '&nbsp;&nbsp;&nbsp;',
+                    balloonContentBody:body,
+                    balloonContentFooter:'<a href="http://www.cian.ru/showphoto.php?id_flat=' + flat.id + '" target="_blank">Подробности</a>'
+                });
+
+
+            });
+
+            return res.geoObjects
+        }
+
+        ymaps.ready(init);
+
+
+        function init() {
+            // Поиск координат центра Нижнего Новгорода
+
+
+
+
+            // Поиск координат центра Нижнего Новгорода
+            ymaps.geocode('Москва, Бабушкинская', { results:1 }).then(function (res) {
+                var firstGeoObject = res.geoObjects.get(0);
+                window.myMap = new ymaps.Map("map", {
+                    center:firstGeoObject.geometry.getCoordinates(),
+                    zoom:14
+                });
+
+
+                ymaps.geocode('Москва, Медведково', { results:1 }).then(function (res) {
+                    var firstGeoObject = res.geoObjects.get(0);
+                    var myCircle = new ymaps.Circle([
+                        // Координаты центра круга
+                        firstGeoObject.geometry.getCoordinates(),
+                        // Радиус круга в метрах
+                        1000
+                    ], {
+                        // Контент балуна
+                        balloonContent: "Радиус круга - 1 км"
+                    }, {
+                        fillColor: '#060',
+                        strokeColor: '#060',
+                        strokeOpacity: 1,
+                        fillOpacity: 0.2,
+                        strokeWidth: 1
+                    });
+
+                    // Добавляем круг на карту
+                    myMap.geoObjects.add(myCircle);
+                }, function (err) {
+                    alert(err.message);
+                })
+
+
+
+                myCircle = new ymaps.Circle([
+                    // Координаты центра круга
+                    firstGeoObject.geometry.getCoordinates(),
+                    // Радиус круга в метрах
+                    1000
+                ], {
+                    // Контент балуна
+                    balloonContent: "Радиус круга - 1 км"
+                }, {
+                    fillColor: '#060',
+                    strokeColor: '#060',
+                    strokeOpacity: 1,
+                    fillOpacity: 0.2,
+                    strokeWidth: 1
+                });
+
+                // Добавляем круг на карту
+                myMap.geoObjects.add(myCircle);
+
+
+                myMap.controls.add('zoomControl').add('typeSelector').add('mapTools');
+                for (var key in flats) {
+                    (function (flat, ymaps) {
+
+                        ymaps.geocode(flat.address, {
+                            kind:'house',
+                            boundedBy:myMap.getBounds(),
+                            results:1
+                        }).then(function (res) {
+                                    geoFlat = create_flat(res, flat)
+                                    myMap.geoObjects.add(geoFlat);
+                                });
+
+                    }(flats[key], ymaps));
+                }
+
+
+            }, function (err) {
+                alert(err.message);
+            })
+        }
+    </script>
+</head>
+
+<body>
+<h2>Поиск квартир на Бабушкинской</h2>
+
+<div id="map" style="width: 800px; height: 800px"></div>
+</body>
+
+</html>
