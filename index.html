@@ -61,8 +61,14 @@
             res.geoObjects.options.set("preset", color_scheme);
 
             res.geoObjects.each(function (geoObject) {
+
+                title =  flat.payment
+                if (flat.photo) {
+                    title = title + ' (c фото)'
+                }
+
                 geoObject.properties.set({
-                    iconContent:flat.payment,
+                    iconContent:title,
                     balloonContentHeader:flat.address + '&nbsp;&nbsp;&nbsp;',
                     balloonContentBody:body,
                     balloonContentFooter:'<a href="http://www.cian.ru/showphoto.php?id_flat=' + flat.id + '" target="_blank">Подробности</a>'

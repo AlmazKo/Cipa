@@ -16,6 +16,7 @@ describe Cipa::Parser do
             living: 21,
             total: 32
         },
+        photo: true,
         payment: 32_000,
         offer: {
             commission: 80,
@@ -83,6 +84,11 @@ describe Cipa::Parser do
   it 'В первом элементе должен быть правильно указано описание квартиры' do
     @result[0].should include(:info)
     @result[0][:info].should eq @expected_proposal[:info]
+
+  end
+
+  it 'В первом элементе должен быть правильно указано информация о фото' do
+    @result[0][:photo].should eq @expected_proposal[:photo]
   end
 
 

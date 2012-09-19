@@ -2,6 +2,7 @@
 require 'net/http'
 require 'nokogiri'
 require 'date'
+
 module Cipa
 
   class Parser
@@ -87,6 +88,15 @@ module Cipa
 
               proposal[:info] = info
 
+
+
+              link = td.css('a').to_s
+
+              if link =~ /small/
+                proposal[:photo] = true
+              else
+                proposal[:photo] = false
+              end
           end
 
         end
